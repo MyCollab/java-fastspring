@@ -120,9 +120,9 @@ public class FastSpring {
 
     public static void main(String[] args) throws IOException {
         FastSpring fastSpring = new FastSpring("mycollab", "linhduong@esofthead.com", "24pIlObiL14A");
-        Subscription subscription = fastSpring.getSubscription("MYC160709-4943-36221S");
+        Subscription subscription = fastSpring.getSubscription("MYC160711-4943-51159S");
         System.out.println("Sub: " + subscription.getStatus() + "---" + subscription.getNextPeriodDate());
 
-//        api.renewSubscription("MYC160706-4943-82180S");
+        fastSpring.renewSubscription("MYC160711-4943-51159S");
     }
 }
