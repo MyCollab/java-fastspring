@@ -90,6 +90,7 @@ public class FastSpring {
         return deserialize(result.body, Subscription.class);
     }
 
+
     public void renewSubscription(String subscriptionId) throws IOException {
         HttpPost request = post(String.format("https://api.fastspring.com/company/%s/subscription/%s/renew", company,
                 subscriptionId));
@@ -116,13 +117,5 @@ public class FastSpring {
         public boolean ok() {
             return code == HttpStatus.SC_OK;
         }
-    }
-
-    public static void main(String[] args) throws IOException {
-        FastSpring fastSpring = new FastSpring("mycollab", "linhduong@esofthead.com", "24pIlObiL14A");
-        Subscription subscription = fastSpring.getSubscription("MYC160711-4943-51159S");
-        System.out.println("Sub: " + subscription.getStatus() + "---" + subscription.getNextPeriodDate());
-
-        fastSpring.renewSubscription("MYC160711-4943-51159S");
     }
 }
