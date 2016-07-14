@@ -1,7 +1,7 @@
-package com.mycollab.billing.fastspring.domain;
+package com.fastspring.domain;
 
 /**
- * @author MyCollab Ltd
+ * @author Hai Phuc Nguyen
  * @since 1.0.0
  */
 public class Customer {
