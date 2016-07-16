@@ -45,6 +45,8 @@ public class Subscription {
 
     private String phoneNumber;
 
+    private String productPath;
+
     public String getStatus() {
         return status;
     }
@@ -155,5 +157,13 @@ public class Subscription {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getProductPath() {
+        return productPath;
+    }
+
+    public void setProductPath(String productPath) {
+        this.productPath = productPath;
     }
 }
